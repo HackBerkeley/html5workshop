@@ -1,0 +1,21 @@
+  <script>
+  $( window ).load( function(){
+      
+      snippetc = ace.edit("snippetc");
+      var HTMLMode = require("ace/mode/html").Mode;
+      snippetc.getSession().setMode(new HTMLMode());
+      
+      $("#submit").click(function(){
+        $.post('/updateHTML', {html:snippetc.getSession().getValue(), user: '<%-user%>'});
+      });
+      
+  });
+  </script>
+    <button id="submit">Update</button> Editting <%=user%> html
+  
+ 
+  
+  <div id="snippetc"><%=html%></div>
+  
+
+  

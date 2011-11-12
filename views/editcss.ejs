@@ -1,0 +1,19 @@
+  <script>
+  $( window ).load( function(){
+      
+      snippetc = ace.edit("snippetc");
+      var CSSMode = require("ace/mode/css").Mode;
+      snippetc.getSession().setMode(new CSSMode());
+      
+      $("#submit").click(function(){
+        $.post('/updateCSS', {css:snippetc.getSession().getValue(), user: '<%-user%>'});
+      });
+      
+  });
+  </script>
+    <button id="submit">Update</button> Editting <%=user%> css
+  
+  <div id="snippetc"><%=css%></div>
+  
+
+  

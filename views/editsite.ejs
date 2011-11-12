@@ -1,0 +1,23 @@
+  <script>
+  $( window ).load( function(){
+      
+      snippetc = ace.edit("snippetc");
+      var CSSMode = require("ace/mode/css").Mode;
+      snippetc.getSession().setMode(new CSSMode());
+      
+      snippeth = ace.edit("snippeth");
+      var HTMLMode = require("ace/mode/html").Mode;
+      snippeth.getSession().setMode(new HTMLMode());
+      
+      $("#submit").click(function(){
+        $.post('/update', {html:snippeth.getSession().getContent(), css:snippetc.getSession().getContent(), user: '<%-user%>'});
+      });
+      
+  });
+  </script>
+    <button id="submit">Update</button>
+  
+  <div id="snippetc" style="height: 500px; width: 500px"><%-css%></div>
+  
+
+  

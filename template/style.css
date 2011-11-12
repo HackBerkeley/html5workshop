@@ -1,0 +1,73 @@
+/* Style Resets */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{font-size:100%;}
+a {outline: none;} /* Gets rid of Firefox's dotted borders */
+a img {border: none;} /* Gets rid of IE's blue borders */
+
+/* Format your body. ;) */
+body, html {
+  background: rgb(252,236,252); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(252,236,252,1) 0%, rgba(251,166,225,1) 50%, rgba(253,137,215,1) 51%, rgba(255,124,216,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,236,252,1)), color-stop(50%,rgba(251,166,225,1)), color-stop(51%,rgba(253,137,215,1)), color-stop(100%,rgba(255,124,216,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%); /* IE10+ */
+  background: linear-gradient(top,  rgba(252,236,252,1) 0%,rgba(251,166,225,1) 50%,rgba(253,137,215,1) 51%,rgba(255,124,216,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Format your header. (Only works in HTML5-compatible browsers. We would typically use JavaScript for non-compatible browsers to make them recognize these HTML5 tags.) */
+header {
+  
+}
+
+/* Format your footer. */
+footer {
+  
+}
+
+/* Format your navigation. */
+nav {
+  
+}
+
+/* Format your sections. */
+section {
+  
+}
+
+/* Format your articles. */
+article {
+  
+}
+
+header img {
+  margin: 10px;
+}
+
+header h1 {
+  color: purple;
+}
+
+article h1 {
+  color: red;
+}
+
+.clear {
+  clear: both;
+}
+
+nav a {
+  -webkit-transition:font-size 150ms ease-in;  
+  -moz-transition:font-size 150ms ease-in;  
+  -o-transition:font-size 150ms ease-in;  
+  transition:font-size 150ms ease-in; 
+}
+
+nav a:hover {
+  font-size: 50px;
+}
+
+/* Add your own! */
+
+/* A cool thing to try is making your own tags. */
