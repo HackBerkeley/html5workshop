@@ -59,7 +59,6 @@ app.get('/edit/:username/html', function(req, res){
       makePage(user);
       html = htmlCode;
     }
-    console.log(html.toString());
     res.render('edithtml', {user: user, html: html});
   });
   
